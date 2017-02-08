@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+  </head>
+  <body>
+
+    <h2>Projects</h2>
+    <ul>
+      {% for item in site.posts %}
+        <li>
+          <a href="">{{item.title}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </body>
+</html>
